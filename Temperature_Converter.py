@@ -1,13 +1,15 @@
 import unittest
 
-print("This is a program to convert units of temperature.")
+print("\nThis is a program to convert units of temperature.")
 
-while true:
-    print("Type EXIT to exit...")
-    print("\nInput F for Farenheit or C for Celsius: ")
+while True:
+    print("\nType EXIT to exit...")
+    print("Input F for Farenheit or C for Celsius: ")
     unit = input()
-    print(unit.upper())
     
+    if unit.upper() == 'EXIT':
+        break
+
     if unit.upper() == "F":
         print("You selected Farenheit.")
     elif unit.upper() == "C":
